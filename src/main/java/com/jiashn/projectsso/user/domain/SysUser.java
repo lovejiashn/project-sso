@@ -5,12 +5,15 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import org.springframework.lang.NonNull;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.time.LocalDateTime;
+import java.util.Collection;
 
 /**
  * @Author: jiangjs
@@ -19,7 +22,7 @@ import java.time.LocalDateTime;
  **/
 @Data
 @TableName("sys_user")
-public class SysUser {
+public class SysUser{
     /**
      * 主键Id
      */
@@ -58,4 +61,5 @@ public class SysUser {
      * 删除
      */
     private Integer deleted;
+
 }

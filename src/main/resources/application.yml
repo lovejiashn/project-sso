@@ -24,3 +24,15 @@ mybatis-plus:
     db-config:
       logic-delete-value: 1        #配置删除值（默认为1）
       logic-not-delete-value: 0    #配置未删除值（默认为0）
+#jwt配置
+jwt:
+  #密钥Key
+  secret: JWTsecret
+  #HeaderKey
+  tokenHeader: token
+  #Token前缀字符
+  tokenPrefix: Sso-
+  #过期时间 单位为秒
+  expiration: 86400
+  #不需要认证的接口
+  antMatchers: /index,/login/**,/favicon.ico

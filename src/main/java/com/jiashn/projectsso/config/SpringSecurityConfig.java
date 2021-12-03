@@ -32,6 +32,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
     }
 
+    /**
+     * 用于放行静态资源的访问
+     * @param web
+     * @throws Exception
+     */
     @Override
     public void configure(WebSecurity web) throws Exception{
         //设置拦截忽略文件夹,可以对静态资源放行

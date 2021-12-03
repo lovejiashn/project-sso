@@ -18,6 +18,10 @@
         <mybatisPlus.version>3.4.0</mybatisPlus.version>
         <druid.version>1.2.6</druid.version>
         <validator.version>6.1.7.Final</validator.version>
+        <securityjwt.version>1.0.9.RELEASE</securityjwt.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <commonslang3.version>3.5</commonslang3.version>
+        <fastjson.version>1.2.73</fastjson.version>
     </properties>
     <dependencies>
         <dependency>
@@ -44,10 +48,32 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druid.version}</version>
         </dependency>
+        <!--hibernate参数校验-->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${validator.version}</version>
+        </dependency>
+        <!--jwt依赖-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-jwt</artifactId>
+            <version>${securityjwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commonslang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
